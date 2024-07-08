@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Donation Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Donation Website Logo">
+        </div>
+        <h2><b>Log In</b></h2>
+        <form action="signin" method="post">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group submit-container">
+                <input type="submit" value="Sign In">
+            </div>
+            <div class="extra-links">
+                <a href="forgot-password">Forgot Password?</a>
+                <span>|</span>
+                <a href="sign-up">Sign Up</a>
+            </div>
+            <div class="social-sign-in">
+                <p>Or Log in with</p>
+                <button type="button" onclick="signInWithGoogle()">Google</button>
+                <button type="button" onclick="signInWithFacebook()">Facebook</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
